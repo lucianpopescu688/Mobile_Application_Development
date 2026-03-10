@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Service Buddy 🚗</string>
+    <string-array name="status_options">
+        <item>OVERDUE</item>
+        <item>PENDING</item>
+        <item>UPCOMING</item>
+        <item>FUTURE</item>
+        <item>COMPLETED</item>
+    </string-array>
+</resources>

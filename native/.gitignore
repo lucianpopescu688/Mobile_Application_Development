@@ -1,0 +1,5 @@
+# Zip archives
+*.zip
+
+# IDE
+.idea/

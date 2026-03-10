@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventListFragment">
+
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.example.servicebuddy.ui.EventListFragment"
+        android:label="Service Buddy"
+        tools:layout="@layout/fragment_event_list">
+        <action
+            android:id="@+id/action_to_addEventFragment"
+            app:destination="@id/addEventFragment" />
+        <action
+            android:id="@+id/action_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEventFragment"
+        android:name="com.example.servicebuddy.ui.AddEventFragment"
+        android:label="Add Event"
+        tools:layout="@layout/fragment_add_event" />
+
+    <fragment
+        android:id="@+id/editEventFragment"
+        android:name="com.example.servicebuddy.ui.EditEventFragment"
+        android:label="Edit Event"
+        tools:layout="@layout/fragment_edit_event">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
